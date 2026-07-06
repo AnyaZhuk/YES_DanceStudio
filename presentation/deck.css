@@ -870,7 +870,7 @@ body {
 
 /* Печать / PDF — без колонтитулов браузера (путь, дата, номер страницы) */
 @page {
-  size: landscape;
+  size: portrait;
   margin: 0;
 }
 
