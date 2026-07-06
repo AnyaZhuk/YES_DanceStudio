@@ -10,13 +10,11 @@
   function closeMobileNav() {
     nav.classList.remove('nav--open');
     burger.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
   }
 
   burger.addEventListener('click', () => {
     const open = nav.classList.toggle('nav--open');
     burger.setAttribute('aria-expanded', open);
-    document.body.style.overflow = open ? 'hidden' : '';
   });
 
   nav.querySelectorAll('.nav-dropdown').forEach(dropdown => {

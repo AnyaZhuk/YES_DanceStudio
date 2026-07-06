@@ -85,10 +85,18 @@ address { font-style: normal; }
   z-index: 100;
   height: var(--header-h);
   background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   transition: box-shadow var(--transition);
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  pointer-events: none;
 }
 
 .header--scrolled { box-shadow: var(--shadow); }
@@ -358,10 +366,12 @@ address { font-style: normal; }
 }
 
 .hero__img {
+  display: block;
   width: 100%;
-  border-radius: var(--radius);
-  object-fit: cover;
+  aspect-ratio: 980 / 391;
   max-height: 520px;
+  border-radius: var(--radius);
+  background: center / cover no-repeat url("https://www.yesds.ru/images/%d0%be%d0%b1%d0%bb%d0%be%d0%b6%d0%ba%d0%b01%20copy-u125254-fr.jpg");
 }
 
 .hero__glow {
@@ -530,11 +540,7 @@ address { font-style: normal; }
 }
 
 /* ── Promo ── */
-.promo { padding: 0 0 80px; }
-
-.promo__mobile-lead {
-  display: none;
-}
+.promo { padding: 40px 0 80px; }
 
 .promo__card {
   position: relative;
@@ -1273,15 +1279,19 @@ address { font-style: normal; }
     top: var(--header-h);
     left: 0;
     right: 0;
-    bottom: 0;
+    z-index: 99;
+    height: auto;
+    max-height: calc(100dvh - var(--header-h));
     flex-direction: column;
     align-items: stretch;
-    padding: 24px;
+    padding: 16px 24px 20px;
     background: var(--white);
     transform: translateX(100%);
     transition: transform var(--transition);
     gap: 4px;
     overflow-y: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-lg);
   }
 
   .nav--open { transform: translateX(0); }
@@ -1361,15 +1371,6 @@ address { font-style: normal; }
 
   .promo__overlay {
     padding: 32px 20px 1.5rem;
-  }
-
-  .promo__mobile-lead {
-    display: block;
-    margin-bottom: 20px;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 1.55;
-    color: var(--gray-700);
   }
 
   .promo__subtitle,

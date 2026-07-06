@@ -5,12 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Танцевальная студия YES! в Саратове — обучение танцам для всех возрастов. Первое занятие бесплатно!">
   <meta name="theme-color" content="#E20055">
+  <link rel="canonical" href="https://www.yesds.ru/">
   <title>Главная | Танцевальная студия YES! | г. Саратов</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="https://www.yesds.ru/images/%d1%88%d0%b0%d0%b1%d0%bb%d0%be%d0%bd-a-favicon.ico" type="image/x-icon">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "DanceSchool",
+        "@id": "https://www.yesds.ru/#organization",
+        "name": "YES! Dance Studio",
+        "alternateName": "Танцевальная студия YES!",
+        "url": "https://www.yesds.ru/",
+        "logo": "https://www.yesds.ru/images/artwork-12.svg",
+        "image": "https://www.yesds.ru/images/%d0%be%d0%b1%d0%bb%d0%be%d0%b6%d0%ba%d0%b01%20copy-u125254-fr.jpg",
+        "description": "Танцевальная студия YES! в Саратове — обучение танцам для всех возрастов. Первое занятие бесплатно!",
+        "telephone": "+7-8452-530-480",
+        "legalName": "ИП Алекперова Н.А.",
+        "taxID": "641901665501",
+        "sameAs": [
+          "https://vk.com/yes_ds",
+          "https://www.youtube.com/c/YesdsRu"
+        ],
+        "department": [
+          { "@id": "https://www.yesds.ru/#kazachya" },
+          { "@id": "https://www.yesds.ru/#rabochaya" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Услуги YES! Dance Studio",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Аренда залов",
+                "description": "Просторные залы с зеркалами — для репетиций, отработки связок или съёмок"
+              },
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "400",
+                "priceCurrency": "RUB",
+                "unitText": "час"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Индивидуальная хореография",
+                "description": "Постановка хореографии к свадьбе, выпускному, юбилею, корпоративу и другим особым случаям"
+              },
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "2000",
+                "priceCurrency": "RUB",
+                "unitText": "занятие"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Подарочные сертификаты",
+                "description": "Сертификат на занятия в танцевальной студии YES!"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.yesds.ru/#kazachya",
+        "name": "YES! Dance Studio — ул. Б. Казачья",
+        "parentOrganization": { "@id": "https://www.yesds.ru/#organization" },
+        "telephone": "+7-8452-530-480",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Б. Казачья, 30",
+          "addressLocality": "Саратов",
+          "addressCountry": "RU"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.yesds.ru/#rabochaya",
+        "name": "YES! Dance Studio — ул. Рабочая",
+        "parentOrganization": { "@id": "https://www.yesds.ru/#organization" },
+        "telephone": "+7-8452-530-480",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Рабочая, 105А",
+          "addressLocality": "Саратов",
+          "addressCountry": "RU"
+        }
+      },
+      {
+        "@type": "Event",
+        "@id": "https://www.yesds.ru/#concert-2026",
+        "name": "Отчётный концерт YES!",
+        "description": "Выступления учеников всех возрастов и направлений танцевальной студии YES!",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+          "@type": "Place",
+          "name": "YES! Dance Studio",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Саратов",
+            "addressCountry": "RU"
+          }
+        },
+        "organizer": { "@id": "https://www.yesds.ru/#organization" },
+        "image": "https://www.yesds.ru/images/afisha_otchetnik1_kopia.jpg"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="header" id="header">
@@ -50,12 +166,7 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero__visual">
-        <img
-          src="https://www.yesds.ru/images/%d0%be%d0%b1%d0%bb%d0%be%d0%b6%d0%ba%d0%b01%20copy-u125254-fr.jpg"
-          alt="Команда танцевальной студии YES!"
-          class="hero__img"
-          fetchpriority="high"
-        >
+        <div class="hero__img" role="img" aria-label="Команда танцевальной студии YES!"></div>
         <div class="hero__glow" aria-hidden="true"></div>
       </div>
     </section>
@@ -134,7 +245,6 @@
     <!-- Concert promo -->
     <section class="promo" aria-labelledby="promo-title">
       <div class="container">
-        <p class="promo__mobile-lead">Прочувствуйте наш уют и атмосферу.</p>
         <div class="promo__card">
           <div class="promo__visual">
             <img
@@ -281,10 +391,10 @@
         <a href="#" class="footer__address">ул. Рабочая, <span class="num">105А</span></a>
       </address>
       <div class="footer__social">
-        <a href="#" aria-label="ВКонтакте">
+        <a href="https://vk.com/yes_ds" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">
           <img src="https://www.yesds.ru/images/artwork-14.svg" alt="" width="22" height="22">
         </a>
-        <a href="#" aria-label="YouTube">
+        <a href="https://www.youtube.com/c/YesdsRu" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
           <img src="https://www.yesds.ru/images/artwork-16.svg" alt="" width="22" height="22">
         </a>
       </div>
