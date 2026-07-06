@@ -1763,8 +1763,8 @@ address { font-style: normal; }
   .promo__img {
     position: static;
     height: auto;
-    aspect-ratio: 3 / 4;
-    min-height: 360px;
+    aspect-ratio: 1 / 1;
+    min-height: 270px;
   }
 
   .promo__subtitle,
