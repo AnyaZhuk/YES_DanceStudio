@@ -909,15 +909,24 @@ address { font-style: normal; }
 
 /* ── Signup ── */
 .signup {
-  padding: 80px 0;
+  min-height: calc(100dvh - var(--header-h));
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
   background: var(--gray-100);
+  scroll-margin-top: var(--header-h);
 }
 
 .signup__inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 48px);
   align-items: center;
+  width: 100%;
+}
+
+.signup__info {
+  max-width: 480px;
 }
 
 .signup__badge {
@@ -954,9 +963,11 @@ address { font-style: normal; }
 .signup__form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
+  width: 100%;
+  min-width: 0;
   background: var(--white);
-  padding: 40px;
+  padding: clamp(28px, 4vw, 36px);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -967,7 +978,7 @@ address { font-style: normal; }
 
 .form-field input {
   width: 100%;
-  padding: 16px 16px 8px;
+  padding: 28px 16px 10px;
   font-family: var(--font-body);
   font-size: 16px;
   border: none;
@@ -981,6 +992,7 @@ address { font-style: normal; }
   letter-spacing: 0.04em;
   font-size: 17px;
   font-weight: 500;
+  padding-top: 30px;
 }
 
 .form-field input:focus { border-color: var(--pink); }
@@ -1001,10 +1013,33 @@ address { font-style: normal; }
 
 .form-field input:focus + label,
 .form-field input:not(:placeholder-shown) + label {
-  top: 8px;
+  top: 10px;
   transform: translateY(0);
   font-size: 11px;
   color: var(--pink);
+}
+
+.form-field--invalid input {
+  border-color: #e03a5f;
+}
+
+.form-field--invalid input:focus + label,
+.form-field--invalid input:not(:placeholder-shown) + label {
+  color: #e03a5f;
+}
+
+.form-field__error {
+  display: block;
+  min-height: 0;
+  margin-top: 6px;
+  padding: 0 16px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #e03a5f;
+}
+
+.form-field__error:empty {
+  display: none;
 }
 
 .form-locations {
@@ -1021,6 +1056,15 @@ address { font-style: normal; }
   letter-spacing: 0.04em;
   color: var(--gray-700);
   margin-bottom: 4px;
+}
+
+.form-locations.form-field--invalid legend {
+  color: #e03a5f;
+}
+
+.form-locations .form-field__error {
+  padding: 0;
+  margin-top: 8px;
 }
 
 .checkbox {
@@ -1364,7 +1408,15 @@ address { font-style: normal; }
   .about__grid,
   .signup__inner {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 24px;
+  }
+
+  .signup {
+    padding: 16px 0;
+  }
+
+  .signup__info {
+    max-width: none;
   }
 
   .features__grid {
@@ -1500,7 +1552,11 @@ address { font-style: normal; }
 
   .about__photo-row { grid-template-columns: 1fr; }
 
-  .signup__form { padding: 28px 24px; }
+  .signup__form { padding: 24px 20px; }
+
+  .signup__title {
+    font-size: clamp(24px, 6vw, 32px);
+  }
 
   .faq__question { padding: 16px 20px; font-size: 15px; }
   .faq__answer { padding: 0 20px 16px; }

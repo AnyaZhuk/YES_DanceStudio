@@ -12,6 +12,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="https://www.yesds.ru/images/%d1%88%d0%b0%d0%b1%d0%bb%d0%be%d0%bd-a-favicon.ico" type="image/x-icon">
+  <script>
+    if (window.location.hash === '#signup') {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -394,20 +399,51 @@
           <h2 class="signup__title">Запишись на пробное занятие</h2>
           <p class="signup__note">При первом посещении студии. Автоматически запись производится на ближайшую дату тренировки по расписанию.</p>
         </div>
-        <form class="signup__form" action="#" method="post">
-          <div class="form-field">
-            <input type="text" name="custom_U6798" id="name" placeholder=" " required>
+        <form class="signup__form" action="#" method="post" novalidate>
+          <div class="form-field" data-field="name">
+            <input
+              type="text"
+              name="custom_U6798"
+              id="name"
+              placeholder=" "
+              required
+              minlength="3"
+              autocomplete="name"
+              aria-describedby="name-error"
+            >
             <label for="name">Фамилия и имя</label>
+            <span class="form-field__error" id="name-error" role="alert"></span>
           </div>
-          <div class="form-field">
-            <input type="tel" name="custom_U125623" id="phone" placeholder=" " required>
+          <div class="form-field" data-field="phone">
+            <input
+              type="tel"
+              name="custom_U125623"
+              id="phone"
+              placeholder=" "
+              required
+              inputmode="tel"
+              autocomplete="tel"
+              maxlength="18"
+              aria-describedby="phone-error"
+            >
             <label for="phone">Номер телефона</label>
+            <span class="form-field__error" id="phone-error" role="alert"></span>
           </div>
-          <div class="form-field">
-            <input type="text" name="custom_U45256" id="direction" placeholder=" " required>
+          <div class="form-field" data-field="direction">
+            <input
+              type="text"
+              name="custom_U45256"
+              id="direction"
+              placeholder=" "
+              required
+              minlength="2"
+              autocomplete="off"
+              aria-describedby="direction-error"
+            >
             <label for="direction">Направление</label>
+            <span class="form-field__error" id="direction-error" role="alert"></span>
           </div>
-          <fieldset class="form-locations">
+          <fieldset class="form-locations" data-field="branch">
             <legend>Выберите филиал</legend>
             <label class="radio">
               <input type="radio" name="custom_U107705[]" value="Филиал ул. Б. Казачья, 30 (угол ул. Вольская)" required>
@@ -419,6 +455,7 @@
               <span class="radio__dot"></span>
               <span>ул. Рабочая, <span class="num">105А</span> <small>(район Детского парка)</small></span>
             </label>
+            <span class="form-field__error" id="branch-error" role="alert"></span>
           </fieldset>
           <button type="submit" class="btn btn--primary btn--lg btn--full">Записаться на занятие</button>
         </form>
