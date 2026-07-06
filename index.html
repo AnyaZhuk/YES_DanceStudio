@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Танцевальная студия YES! в Саратове — обучение танцам для всех возрастов. Первое занятие бесплатно!">
+  <meta name="theme-color" content="#E20055">
+  <title>Главная | Танцевальная студия YES! | г. Саратов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="https://www.yesds.ru/images/%d1%88%d0%b0%d0%b1%d0%bb%d0%be%d0%bd-a-favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="YES! Dance Studio — на главную">
+        <img src="https://www.yesds.ru/images/artwork-12.svg" alt="YES!" width="80" height="64">
+      </a>
+      <div class="header__center">
+        <a href="#signup" class="header__signup">Записаться на пробное</a>
+      </div>
+      <div class="header__actions">
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <a href="#">Направления</a>
+        <a href="#">Преподаватели</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown__toggle" aria-expanded="false" aria-haspopup="true">
+            Расписание
+            <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+          </button>
+          <div class="nav-dropdown__menu" role="menu">
+            <a href="#" role="menuitem">Казачья, <span class="num">30</span></a>
+            <a href="#" role="menuitem">Рабочая, <span class="num">105А</span></a>
+          </div>
+        </div>
+        <a href="#">Цены</a>
+        <a href="#">Контакты</a>
+      </nav>
+      <a href="tel:+78452530480" class="header__phone">+7 (8452) 530-480</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__visual">
+        <img
+          src="https://www.yesds.ru/images/%d0%be%d0%b1%d0%bb%d0%be%d0%b6%d0%ba%d0%b01%20copy-u125254-fr.jpg"
+          alt="Команда танцевальной студии YES!"
+          class="hero__img"
+          fetchpriority="high"
+        >
+        <div class="hero__glow" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- Branches -->
+    <section class="locations" aria-labelledby="locations-title">
+      <div class="container">
+        <h2 class="locations__title" id="locations-title">Наши филиалы в Саратове</h2>
+        <div class="locations__grid">
+          <article class="location-card">
+            <div class="location-card__head">
+              <span class="location-card__tag">Филиал 1</span>
+              <h3 class="location-card__name">ул. Б. Казачья, <span class="num">30</span></h3>
+              <p class="location-card__hint">угол ул. Вольская, <span class="num">2</span> этаж</p>
+            </div>
+            <div class="location-card__actions">
+              <a href="#" class="btn btn--primary btn--sm">Расписание</a>
+              <a href="#" class="btn btn--outline btn--sm">Маршрут</a>
+            </div>
+          </article>
+          <article class="location-card">
+            <div class="location-card__head">
+              <span class="location-card__tag">Филиал 2</span>
+              <h3 class="location-card__name">ул. Рабочая, <span class="num">105А</span></h3>
+              <p class="location-card__hint">район Детского парка</p>
+            </div>
+            <div class="location-card__actions">
+              <a href="#" class="btn btn--primary btn--sm">Расписание</a>
+              <a href="#" class="btn btn--outline btn--sm">Маршрут</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" aria-labelledby="features-title">
+      <div class="container">
+        <h2 class="section-title" id="features-title">Почему YES!</h2>
+        <div class="features__grid">
+          <article class="feature-card">
+            <span class="feature-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M5 20c0-3.3 3.1-6 7-6s7 2.7 7 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <p class="feature-card__value">от <span class="num">3</span> лет</p>
+            <p class="feature-card__text">Малыши, подростки и взрослые — у каждого свой уровень и группа</p>
+          </article>
+          <a href="#" class="feature-card feature-card--link">
+            <span class="feature-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M8 7l4-4 4 4M8 17l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <p class="feature-card__value"><span class="num">20+</span> направлений</p>
+            <p class="feature-card__text">От хип-хопа до бальных — найдётся стиль на любой вкус</p>
+            <span class="feature-card__more">Смотреть все →</span>
+          </a>
+          <a href="#" class="feature-card feature-card--link">
+            <span class="feature-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="9" r="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M3 20c0-3.3 3.1-5.5 6-5.5M13 20c0-2.2 2.7-4 5-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <p class="feature-card__value">Команда</p>
+            <p class="feature-card__text">Опытные и энергичные преподаватели — учат результату, но без давления</p>
+            <span class="feature-card__more">Познакомиться →</span>
+          </a>
+          <a href="#signup" class="feature-card feature-card--link feature-card--accent">
+            <span class="feature-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7L12 16.8 5.7 21l2.3-7-6-4.6h7.6L12 2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </span>
+            <p class="feature-card__value"><span class="num">1-е</span> занятие</p>
+            <p class="feature-card__text">Пробное занятие бесплатно — приходите и почувствуйте атмосферу студии</p>
+            <span class="feature-card__more">Записаться →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Concert promo -->
+    <section class="promo" aria-labelledby="promo-title">
+      <div class="container">
+        <p class="promo__mobile-lead">Прочувствуйте наш уют и атмосферу.</p>
+        <div class="promo__card">
+          <div class="promo__visual">
+            <img
+              src="https://www.yesds.ru/images/afisha_otchetnik1_kopia.jpg"
+              alt="Афиша отчётного концерта YES! Dance Studio"
+              class="promo__img"
+            >
+            <div class="promo__overlay">
+              <span class="promo__tag">Ближайшее событие · 2026</span>
+              <h2 class="promo__title" id="promo-title">Отчётный концерт YES!</h2>
+              <p class="promo__subtitle">
+                Прочувствуйте наш уют и атмосферу — и познакомьтесь
+                с людьми, которым близки движение, музыка и сцена.
+              </p>
+              <ul class="promo__perks">
+                <li>Выступления учеников всех возрастов и направлений</li>
+                <li>Атмосфера, которую не передаст сайт</li>
+                <li>Идеально, если думаете начать заниматься</li>
+              </ul>
+            </div>
+          </div>
+          <div class="promo__actions">
+            <a href="#" class="btn btn--primary btn--lg">Купить билеты</a>
+            <a href="#signup" class="btn btn--outline-light btn--lg">Первое занятие бесплатно</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="services__header">
+          <h2 class="section-title" id="services-title">Не только занятия</h2>
+          <p class="services__hook">Зал, подарок или танец к вашему событию — <strong>выбирайте свой формат</strong></p>
+        </div>
+        <div class="services__grid">
+          <a href="#" class="service-card">
+            <img src="https://www.yesds.ru/assets/untitled-1.jpg" alt="Аренда танцевальных залов YES!">
+            <div class="service-card__overlay">
+              <div class="service-card__panel">
+                <span class="service-card__tag">Два филиала</span>
+                <h3>Аренда залов</h3>
+                <p class="service-card__text">
+                  Просторные залы с зеркалами — для репетиций, отработки связок или съёмок
+                </p>
+                <p class="service-card__meta">от <span class="num">400</span> ₽ / час</p>
+                <span class="service-card__more">Смотреть залы →</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="service-card service-card--choreography">
+            <img src="images/choreography-dancer.png" alt="Солистка на занятии по индивидуальной хореографии в студии YES!">
+            <div class="service-card__overlay">
+              <div class="service-card__panel">
+                <span class="service-card__tag">К вашему событию</span>
+                <h3>Индивидуальная хореография</h3>
+                <p class="service-card__text">
+                  Первый танец молодожёнов — и постановка хореографии к выпускному, юбилею, корпоративу и другим особым случаям
+                </p>
+                <p class="service-card__meta">от <span class="num">2 000</span> ₽ / занятие</p>
+                <span class="service-card__more">Заказать постановку →</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="service-card">
+            <img src="https://www.yesds.ru/assets/sertifikat.jpg" alt="Подарочные сертификаты YES!">
+            <div class="service-card__overlay">
+              <div class="service-card__panel">
+                <span class="service-card__tag">Подарок</span>
+                <h3>Подарочные сертификаты</h3>
+                <p class="service-card__text">
+                  Сюрприз для друга, коллеги или близкого — на любое направление студии
+                </p>
+                <p class="service-card__meta">Оформление за пару минут</p>
+                <span class="service-card__more">Выбрать сертификат →</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sign-up form -->
+    <section class="signup" id="signup">
+      <div class="container signup__inner">
+        <div class="signup__info">
+          <p class="signup__badge">Первое занятие <strong>бесплатно!</strong></p>
+          <h2 class="signup__title">Запишись на пробное занятие</h2>
+          <p class="signup__note">При первом посещении студии. Автоматически запись производится на ближайшую дату тренировки по расписанию.</p>
+        </div>
+        <form class="signup__form" action="#" method="post">
+          <div class="form-field">
+            <input type="text" name="custom_U6798" id="name" placeholder=" " required>
+            <label for="name">Фамилия и имя</label>
+          </div>
+          <div class="form-field">
+            <input type="tel" name="custom_U125623" id="phone" placeholder=" " required>
+            <label for="phone">Номер телефона</label>
+          </div>
+          <div class="form-field">
+            <input type="text" name="custom_U45256" id="direction" placeholder=" " required>
+            <label for="direction">Направление</label>
+          </div>
+          <fieldset class="form-locations">
+            <legend>Выберите филиал</legend>
+            <label class="radio">
+              <input type="radio" name="custom_U107705[]" value="Филиал ул. Б. Казачья, 30 (угол ул. Вольская)" required>
+              <span class="radio__dot"></span>
+              <span>ул. Б. Казачья, <span class="num">30</span> <small>(угол Вольской)</small></span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="custom_U107705[]" value="Филиал ул. Рабочая, 105А (район Детского парка)">
+              <span class="radio__dot"></span>
+              <span>ул. Рабочая, <span class="num">105А</span> <small>(район Детского парка)</small></span>
+            </label>
+          </fieldset>
+          <button type="submit" class="btn btn--primary btn--lg btn--full">Записаться на занятие</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="https://www.yesds.ru/images/artwork-13.svg" alt="YES!" width="72" height="58">
+        <p class="footer__studio">YES! Dance Studio</p>
+        <p class="footer__hashtag">#yesds</p>
+      </div>
+      <nav class="footer__nav" aria-label="Навигация в подвале">
+        <a href="#">Главная</a>
+        <a href="#">Направления</a>
+        <a href="#">Преподаватели</a>
+        <span class="footer__nav-group">Расписание</span>
+        <a href="#" class="footer__nav-sub">Казачья, <span class="num">30</span></a>
+        <a href="#" class="footer__nav-sub">Рабочая, <span class="num">105А</span></a>
+        <a href="#">Цены</a>
+        <a href="#">Контакты</a>
+      </nav>
+      <address class="footer__contacts">
+        <p class="footer__city">г. Саратов</p>
+        <a href="#" class="footer__address">ул. Б. Казачья, <span class="num">30</span></a>
+        <a href="#" class="footer__address">ул. Рабочая, <span class="num">105А</span></a>
+      </address>
+      <div class="footer__social">
+        <a href="#" aria-label="ВКонтакте">
+          <img src="https://www.yesds.ru/images/artwork-14.svg" alt="" width="22" height="22">
+        </a>
+        <a href="#" aria-label="YouTube">
+          <img src="https://www.yesds.ru/images/artwork-16.svg" alt="" width="22" height="22">
+        </a>
+      </div>
+      <div class="footer__legal">
+        <p>ИП Алекперова Н.А.</p>
+        <p>ИНН 641901665501</p>
+        <p>ОГРНИП 316645100109564</p>
+        <a href="tel:+78452530480" class="footer__phone">+7 (8452) 530-480</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "s1",
+    "day": "mon",
+    "time": "18:00",
+    "durationMin": 60,
+    "style": "Contemporary",
+    "instructor": "Анна Смирнова",
+    "level": "beginner",
+    "spotsLeft": 5,
+    "room": "Зал A"
+  },
+  {
+    "id": "s2",
+    "day": "mon",
+    "time": "19:30",
+    "durationMin": 75,
+    "style": "Hip-Hop",
+    "instructor": "Максим Орлов",
+    "level": "intermediate",
+    "spotsLeft": 3,
+    "room": "Зал B"
+  },
+  {
+    "id": "s3",
+    "day": "wed",
+    "time": "17:00",
+    "durationMin": 60,
+    "style": "Latin",
+    "instructor": "Елена Ривера",
+    "level": "all",
+    "spotsLeft": 8,
+    "room": "Зал A"
+  },
+  {
+    "id": "s4",
+    "day": "fri",
+    "time": "20:00",
+    "durationMin": 90,
+    "style": "Contemporary",
+    "instructor": "Анна Смирнова",
+    "level": "advanced",
+    "spotsLeft": 2,
+    "room": "Зал A"
+  }
+]

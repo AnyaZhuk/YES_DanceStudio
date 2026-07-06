@@ -1,0 +1,23 @@
+[
+  {
+    "id": "i1",
+    "name": "Анна Смирнова",
+    "styles": ["Contemporary", "Stretch"],
+    "experienceYears": 12,
+    "bio": "Хореограф и педагог contemporary. Выпускница GITIS."
+  },
+  {
+    "id": "i2",
+    "name": "Максим Орлов",
+    "styles": ["Hip-Hop", "House"],
+    "experienceYears": 8,
+    "bio": "Победитель городских баттлов, преподаватель с 2016 года."
+  },
+  {
+    "id": "i3",
+    "name": "Елена Ривера",
+    "styles": ["Latin", "Salsa"],
+    "experienceYears": 10,
+    "bio": "Танцовщица и инструктор латиноамериканских программ."
+  }
+]

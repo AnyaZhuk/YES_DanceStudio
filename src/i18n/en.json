@@ -1,0 +1,83 @@
+{
+  "app": {
+    "name": "Dance Studio",
+    "tagline": "Movement, rhythm, and confidence in every step"
+  },
+  "nav": {
+    "home": "Home",
+    "schedule": "Schedule",
+    "classes": "Styles",
+    "instructors": "Instructors",
+    "pricing": "Pricing",
+    "profile": "Profile",
+    "admin": "Admin",
+    "login": "Sign in",
+    "logout": "Sign out",
+    "register": "Register"
+  },
+  "home": {
+    "heroTitle": "Dance with us",
+    "heroSubtitle": "Contemporary, latin, hip-hop and more for every skill level",
+    "ctaSchedule": "View schedule",
+    "ctaTrial": "Trial class",
+    "statsStudents": "students",
+    "statsClasses": "styles",
+    "statsYears": "years of experience"
+  },
+  "schedule": {
+    "title": "Schedule",
+    "subtitle": "Pick a class and book online",
+    "book": "Book",
+    "level": "Level",
+    "spots": "Spots",
+    "empty": "No classes scheduled this week yet"
+  },
+  "classes": {
+    "title": "Dance styles",
+    "subtitle": "What we teach at the studio"
+  },
+  "instructors": {
+    "title": "Instructors",
+    "subtitle": "Our professional team"
+  },
+  "pricing": {
+    "title": "Memberships",
+    "subtitle": "Flexible plans for regular training",
+    "perMonth": "per month",
+    "choose": "Choose"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "loginTitle": "Sign in",
+    "registerTitle": "Create account",
+    "submitLogin": "Sign in",
+    "submitRegister": "Create account",
+    "noAccount": "No account?",
+    "hasAccount": "Already have an account?"
+  },
+  "profile": {
+    "title": "My profile",
+    "membership": "Membership",
+    "bookings": "My bookings",
+    "noBookings": "No active bookings yet"
+  },
+  "admin": {
+    "title": "Admin panel",
+    "subtitle": "Schedule and student management (coming soon)"
+  },
+  "errors": {
+    "boundaryTitle": "Something went wrong",
+    "boundaryMessage": "Try refreshing the page or come back later.",
+    "boundaryMockHint": "Mock mode: check fixtures in src/api/mock/",
+    "retry": "Retry",
+    "reload": "Reload page"
+  },
+  "common": {
+    "loading": "Loading…",
+    "themeLight": "Light theme",
+    "themeDark": "Dark theme",
+    "language": "Language"
+  }
+}

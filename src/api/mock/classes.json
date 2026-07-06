@@ -1,0 +1,30 @@
+[
+  {
+    "id": "c1",
+    "name": "Contemporary",
+    "description": "Современный танец: пластика, импровизация и работа с телом.",
+    "level": "all",
+    "color": "#7C3AED"
+  },
+  {
+    "id": "c2",
+    "name": "Hip-Hop",
+    "description": "Уличные стили, ритм и свобода движения.",
+    "level": "beginner",
+    "color": "#F59E0B"
+  },
+  {
+    "id": "c3",
+    "name": "Latin",
+    "description": "Сальса, бачата и латиноамериканские ритмы.",
+    "level": "all",
+    "color": "#EC4899"
+  },
+  {
+    "id": "c4",
+    "name": "Stretch & Floor",
+    "description": "Растяжка и элементы акробатики на полу.",
+    "level": "all",
+    "color": "#10B981"
+  }
+]
