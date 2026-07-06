@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YES! — презентация новой главной</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="deck.css">
+</head>
+<body>
+
+  <!-- 1. Титул -->
+  <section class="slide slide--title" id="slide-1">
+    <p class="yes-mega">YES!</p>
+    <h1 class="slide__title">Главная страница, которая ведёт к записи</h1>
+    <p class="slide__lead">Прототип обновлённой главной для YES! Dance Studio, Саратов</p>
+  </section>
+
+  <!-- 2. Проблема -->
+  <section class="slide slide--gray" id="slide-2">
+    <div class="slide__accent slide__accent--tr"></div>
+    <p class="slide__tag">Проблема</p>
+    <h2 class="slide__title">Ваш сайт находят.<br>Вопрос — сколько записываются?</h2>
+    <div class="slide__body">
+      <div class="slide__cols">
+        <div>
+          <p class="slide__lead" style="margin-bottom:0.75rem">Цепочка: <strong>Google → клик → главная → заявка</strong>. Первый шаг отличный. Слабое место — что происходит <strong>после клика</strong>, особенно с телефона.</p>
+          <ul class="slide__list">
+            <li>Ушёл, не поняв за 5 секунд, куда записаться</li>
+            <li>Сравнил с конкурентом — у того проще путь к форме</li>
+            <li>Не нашёл ответ → «позвоню потом»</li>
+          </ul>
+        </div>
+        <div class="funnel">
+          <div class="funnel__step funnel__step--ok">Google — вы здесь</div>
+          <div class="funnel__arrow">↓</div>
+          <div class="funnel__step funnel__step--ok">Клик на yesds.ru</div>
+          <div class="funnel__arrow">↓</div>
+          <div class="funnel__step funnel__step--leak">Главная страница</div>
+          <div class="funnel__arrow">↓</div>
+          <div class="funnel__step">Заявка на пробное</div>
+        </div>
+      </div>
+      <p style="font-size:0.88rem;color:var(--gray-700);margin-top:auto"><strong>Трафик есть</strong> → конверсия в заявку — то, что можно улучшить без увеличения рекламы.</p>
+    </div>
+  </section>
+
+  <!-- 3. #1 в Google -->
+  <section class="slide" id="slide-3">
+    <p class="slide__tag">У вас уже отлично</p>
+    <h2 class="slide__title slide__title--wide">Вы на первом месте в Google — и это заслуга вашего сайта</h2>
+    <div class="slide__body slide__cols" style="align-items:center">
+      <div>
+        <p class="slide__lead">По запросу «танцевальная студия саратов» YES! — <strong>первая</strong> в блоке компаний. Домен, контент и годы работы уже приносят результат.</p>
+        <p>Я не предлагаю «чинить сломанное» — предлагаю <strong>дожать воронку</strong> после клика.</p>
+        <p style="margin-top:1rem"><span class="badge badge--xl">#1</span></p>
+      </div>
+      <img class="img-plain img-plain--tilt-r" src="img/google-serp.png" alt="YES! dance studio — первый результат в Google, Саратов" width="360">
+    </div>
+  </section>
+
+  <!-- 4. Первый экран -->
+  <section class="slide slide--gray slide--compare-hero" id="slide-4">
+    <p class="slide__tag">Первые 3 секунды</p>
+    <h2 class="slide__title slide__title--wide">Первый экран решает: останется или уйдёт</h2>
+    <p class="slide__lead">Слева — yesds.ru. Справа — прототип. Сверху десктоп, снизу телефон.</p>
+    <div class="compare">
+      <div class="compare__row">
+        <div class="compare__cell">
+          <span class="compare__label">Было · Десктоп</span>
+          <div class="device device--desktop">
+            <div class="device__chrome">
+              <span class="device__dot"></span>
+              <span class="device__dot"></span>
+              <span class="device__dot"></span>
+            </div>
+            <div class="device__screen">
+              <img src="img/desktop-old-hero.png" alt="yesds.ru — десктоп, первый экран">
+            </div>
+          </div>
+        </div>
+        <div class="compare__cell">
+          <span class="compare__label compare__label--new">Стало · Десктоп</span>
+          <div class="device device--desktop">
+            <div class="device__chrome">
+              <span class="device__dot"></span>
+              <span class="device__dot"></span>
+              <span class="device__dot"></span>
+            </div>
+            <div class="device__screen">
+              <img src="img/desktop-new-hero.png" alt="Прототип — десктоп, hero и филиалы">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="compare__row compare__row--phones">
+        <div class="compare__cell">
+          <span class="compare__label">Было · Телефон</span>
+          <div class="device device--phone device--phone-lg">
+            <div class="device__screen">
+              <img src="img/mobile-old-hero.png" alt="yesds.ru — мобильная версия">
+            </div>
+          </div>
+        </div>
+        <div class="compare__cell">
+          <span class="compare__label compare__label--new">Стало · Телефон</span>
+          <div class="device device--phone device--phone-lg">
+            <div class="device__screen">
+              <img src="img/mobile-new-hero.png" alt="Прототип — мобильная версия">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Структура — шаги 1–2 -->
+  <section class="slide slide--journey" id="slide-5">
+    <p class="slide__tag">Структура · шаги 1–2</p>
+    <h2 class="slide__title slide__title--wide">Тот же YES! — но по полочкам</h2>
+    <p class="slide__lead">Контент у вас уже был. Я переложила его в маршрут — так его видит родитель.</p>
+    <div class="journey-v journey-v--duo">
+      <article class="journey-v__step">
+        <h3 class="journey-v__name">1. Hero — кто вы</h3>
+        <div class="journey-v__thumb"><img src="img/journey-01-hero.png" alt="Первый экран"></div>
+        <p class="journey-v__caption">«О, танцы для ребёнка — это сюда»</p>
+      </article>
+      <span class="journey-v__arrow" aria-hidden="true">↓</span>
+      <article class="journey-v__step">
+        <h3 class="journey-v__name">2. Филиалы — где вы</h3>
+        <div class="journey-v__thumb"><img src="img/journey-02-locations.png" alt="Филиалы"></div>
+        <p class="journey-v__caption">«Куда ехать — вижу сразу»</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 6. Структура — шаги 3–5 -->
+  <section class="slide slide--gray slide--journey" id="slide-6">
+    <p class="slide__tag">Структура · шаги 3–5</p>
+    <h2 class="slide__title slide__title--wide">Дальше по странице</h2>
+    <div class="journey-v journey-v--trio">
+      <article class="journey-v__step">
+        <h3 class="journey-v__name">3. Почему YES!</h3>
+        <div class="journey-v__thumb"><img src="img/journey-03-features.png" alt="Почему YES"></div>
+        <p class="journey-v__caption">«Подходит по возрасту и стилю»</p>
+      </article>
+      <span class="journey-v__arrow" aria-hidden="true">↓</span>
+      <article class="journey-v__step">
+        <h3 class="journey-v__name">4. Афиша концерта</h3>
+        <div class="journey-v__thumb"><img src="img/journey-04-concert.png" alt="Концерт"></div>
+        <p class="journey-v__caption">«Живая студия, не просто зал»</p>
+      </article>
+      <span class="journey-v__arrow" aria-hidden="true">↓</span>
+      <article class="journey-v__step">
+        <h3 class="journey-v__name">5. Не только занятия</h3>
+        <div class="journey-v__thumb"><img src="img/journey-05-services.png" alt="Услуги"></div>
+        <p class="journey-v__caption">«Можно ещё аренду или подарок»</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 7. Структура — шаги 6–8 -->
+  <section class="slide slide--journey" id="slide-7">
+    <p class="slide__tag">Структура · шаги 6–8</p>
+    <h2 class="slide__title slide__title--wide">К записи и доверию</h2>
+    <div class="journey-v journey-v--trio">
+      <article class="journey-v__step">
+        <h3 class="journey-v__name">6. Запись на пробное</h3>
+        <div class="journey-v__thumb"><img src="img/journey-06-signup.png" alt="Запись"></div>
+        <p class="journey-v__caption">«Пробное бесплатно — запишу сейчас»</p>
+      </article>
+      <span class="journey-v__arrow" aria-hidden="true">↓</span>
+      <article class="journey-v__step">
+        <h3 class="journey-v__name">7. FAQ</h3>
+        <div class="journey-v__thumb"><img src="img/journey-07-faq.png" alt="FAQ"></div>
+        <p class="journey-v__caption">«Ответы без звонка — спокойнее»</p>
+      </article>
+      <span class="journey-v__arrow" aria-hidden="true">↓</span>
+      <article class="journey-v__step">
+        <h3 class="journey-v__name">8. Подвал</h3>
+        <div class="journey-v__thumb"><img src="img/journey-08-footer.png" alt="Подвал"></div>
+        <p class="journey-v__caption">«Контакты на месте — доверяю»</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- 8. Запись -->
+  <section class="slide slide--gray slide--form-compare" id="slide-8">
+    <p class="slide__tag">Конверсия</p>
+    <h2 class="slide__title">Кнопка «Записаться» — на каждом экране</h2>
+    <div class="slide__body slide--stack">
+      <ul class="slide__list">
+        <li>«Записаться на пробное» в шапке при скролле</li>
+        <li>Розовый блок «Первое занятие бесплатно!»</li>
+        <li>Плавный скролл к форме по клику</li>
+        <li>Валидация: имя, +7, направление, филиал</li>
+      </ul>
+      <p style="font-size:0.82rem;color:var(--gray-500)">Честно: отправка в прототипе ещё не подключена к вашей системе — это этап запуска.</p>
+      <div class="compare-stack">
+        <figure class="compare-stack__item">
+          <figcaption>Было</figcaption>
+          <img class="img-feature" src="img/form-old.png" alt="Форма на yesds.ru">
+        </figure>
+        <figure class="compare-stack__item compare-stack__item--new">
+          <figcaption>Стало</figcaption>
+          <img class="img-feature" src="img/form-new.png" alt="Форма в прототипе">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. SEO (объединённый) -->
+  <section class="slide slide--seo" id="slide-9">
+    <p class="slide__tag">SEO</p>
+    <h2 class="slide__title slide__title--wide">SEO — не «быть в Google». Вы уже там. Вопрос — что видит человек</h2>
+    <div class="slide__body">
+      <p class="slide__lead" style="margin-bottom:0.5rem">Улучшенная главная помогает удержать позиции, попасть в расширенные блоки и получать клики с точных запросов.</p>
+      <ul class="slide__list" style="margin-bottom:0.5rem">
+        <li>Удержать позиции, пока конкуренты не догнали</li>
+        <li>FAQ и карточка организации прямо в выдаче</li>
+        <li>Запросы: «от 3 лет», «пробное бесплатно», «Казачья / Рабочая»</li>
+      </ul>
+      <table class="seo-table">
+        <thead>
+          <tr><th>Было (yesds.ru)</th><th>Стало (прототип)</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Title: «Главная | Танцевальная студия YES!»</td>
+            <td>«Танцы для детей в Саратове — студия YES! от 3 лет | 20+ направлений»</td>
+          </tr>
+          <tr>
+            <td>Нет блока FAQ</td>
+            <td><strong>9 вопросов-ответов</strong> для родителей</td>
+          </tr>
+          <tr>
+            <td>Нет Schema.org</td>
+            <td>Студия, 2 филиала, концерт, FAQ</td>
+          </tr>
+          <tr>
+            <td>Мало alt у картинок</td>
+            <td>Описательные alt + Яндекс.Карты</td>
+          </tr>
+        </tbody>
+      </table>
+      <img class="img-feature" src="img/faq-new.png" alt="Блок FAQ в прототипе">
+    </div>
+  </section>
+
+  <!-- 10. Доверие -->
+  <section class="slide slide--gray" id="slide-10">
+    <p class="slide__tag">Доверие</p>
+    <h2 class="slide__title">Родитель боится не танцев — а неизвестности</h2>
+    <p class="slide__lead">Филиалы, бесплатное пробное, ответы и реквизиты — в одном визите, без пяти переходов по разделам.</p>
+    <div class="trust-compare">
+      <div class="trust-compare__col trust-compare__col--old">
+        <h3>Было</h3>
+        <div class="trust-compare__imgs">
+          <img class="img-feature" src="img/footer-old.png" alt="Подвал yesds.ru — контакты размазаны">
+        </div>
+        <p style="font-size:0.82rem;color:var(--gray-700);margin-top:0.5rem">FAQ на главной не было — ответы искали по разделам.</p>
+      </div>
+      <div class="trust-compare__col trust-compare__col--new">
+        <h3>Стало</h3>
+        <div class="trust-compare__imgs">
+          <img class="img-feature" src="img/faq-new.png" alt="FAQ в прототипе">
+          <img class="img-feature" src="img/footer-new.png" alt="Подвал прототипа">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Уважение к старому -->
+  <section class="slide slide--dark" id="slide-11">
+    <p class="slide__tag">Важно</p>
+    <h2 class="slide__title">Ваш сайт продуман — я его не обнуляю</h2>
+    <ul class="slide__list" style="margin-top:0.5rem">
+      <li>Фирменный розовый YES! и логотип</li>
+      <li>Тексты про команду, направления, бесплатное пробное</li>
+      <li>Те же поля формы (совместимость с записью)</li>
+      <li>Афиша, аренда, сертификаты, юридическая информация</li>
+    </ul>
+    <p class="slide__lead" style="margin-top:1rem">Как обновить зал: студия та же, ощущение — свежее.</p>
+  </section>
+
+  <!-- 12. Прототип -->
+  <section class="slide slide--gray" id="slide-12">
+    <p class="slide__tag">Честно</p>
+    <h2 class="slide__title">Это прототип главной — не весь сайт</h2>
+    <div class="checklist">
+      <div>
+        <h3>Готово сейчас</h3>
+        <ul>
+          <li>Главная, дизайн, мобильная</li>
+          <li>SEO-основа и FAQ</li>
+          <li>UX формы с валидацией</li>
+        </ul>
+      </div>
+      <div class="checklist--next">
+        <h3>Следующий этап</h3>
+        <ul>
+          <li>Внутренние страницы</li>
+          <li>Подключение формы к CRM</li>
+          <li>Перенос на yesds.ru</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. Итог -->
+  <section class="slide" id="slide-13">
+    <p class="slide__tag">Итог</p>
+    <h2 class="slide__title">Три измеримых эффекта</h2>
+    <div class="stat-row">
+      <div class="stat">
+        <span class="stat__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="2" width="12" height="20" rx="2.5"/>
+            <path d="M10 18h4"/>
+            <path d="M9 6h6"/>
+            <path d="M12 6v3"/>
+          </svg>
+        </span>
+        <p class="stat__text">Больше заявок с телефона — короче путь к форме</p>
+      </div>
+      <div class="stat">
+        <span class="stat__num">SEO</span>
+        <p class="stat__text">Устойчивее позиции — FAQ и разметка</p>
+      </div>
+      <div class="stat">
+        <span class="stat__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3l2.2 6.8H21l-5.5 4.2 2.1 6.5L12 16.2 6.4 20.5l2.1-6.5L3 9.8h6.8L12 3z"/>
+          </svg>
+        </span>
+        <p class="stat__text">Выше доверие — всё на одной странице</p>
+      </div>
+    </div>
+    <p style="margin-top:1.5rem;font-size:0.92rem;color:var(--gray-700);max-width:48ch">При первой позиции в поиске даже +10–15% дошедших до формы — ощутимый прирост <strong>без увеличения рекламы</strong>.</p>
+  </section>
+
+  <!-- 14. Спасибо -->
+  <section class="slide slide--pink slide--thanks" id="slide-14">
+    <h2 class="slide__title slide__title--wide">Прототип уже можно открыть</h2>
+    <p class="thanks-note">Спасибо, что посмотрели! YES! заслуживает сайта, который цепляет так же, как студия на сцене. Готова обсудить перенос на домен, внутренние разделы и следующий этап — напишите, когда будет удобно.</p>
+  </section>
+
+  <nav class="deck-nav" aria-label="Навигация по слайдам">
+    <button type="button" class="deck-nav__btn" id="deck-prev" aria-label="Предыдущий слайд">← Назад</button>
+    <div class="deck-nav__dots" id="deck-dots"></div>
+    <button type="button" class="deck-nav__btn deck-nav__btn--primary" id="deck-next" aria-label="Следующий слайд">Далее →</button>
+  </nav>
+
+  <script src="deck.js"></script>
+</body>
+</html>
