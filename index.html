@@ -22,6 +22,14 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://www.yesds.ru/#website",
+        "url": "https://www.yesds.ru/",
+        "name": "YES! Dance Studio",
+        "inLanguage": "ru-RU",
+        "publisher": { "@id": "https://www.yesds.ru/#organization" }
+      },
+      {
         "@type": "DanceSchool",
         "@id": "https://www.yesds.ru/#organization",
         "name": "YES! Dance Studio",
@@ -30,9 +38,14 @@
         "logo": "https://www.yesds.ru/images/artwork-12.svg",
         "image": "https://www.yesds.ru/images/%d0%be%d0%b1%d0%bb%d0%be%d0%b6%d0%ba%d0%b01%20copy-u125254-fr.jpg",
         "description": "Детская и взрослая танцевальная студия YES! в Саратове: ритмика, эстрадные, хип-хоп, contemporary и другие стили. Казачья, 30 и Рабочая, 105А. Пробное занятие бесплатно!",
-        "telephone": "+7-8452-530-480",
+        "email": "mail@yesds.ru",
+        "telephone": ["+7-8452-530-480", "+7-903-328-04-80"],
         "legalName": "ИП Алекперова Н.А.",
         "taxID": "641901665501",
+        "areaServed": {
+          "@type": "City",
+          "name": "Саратов"
+        },
         "sameAs": [
           "https://vk.com/yes_ds",
           "https://www.youtube.com/c/YesdsRu"
@@ -47,6 +60,19 @@
           "itemListElement": [
             {
               "@type": "Offer",
+              "name": "Пробное занятие",
+              "availability": "https://schema.org/InStock",
+              "price": "0",
+              "priceCurrency": "RUB",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Пробное групповое занятие",
+                "description": "Первое посещение студии бесплатно. Запись на ближайшую тренировку по расписанию."
+              }
+            },
+            {
+              "@type": "Offer",
+              "availability": "https://schema.org/InStock",
               "itemOffered": {
                 "@type": "Service",
                 "name": "Аренда залов",
@@ -61,20 +87,16 @@
             },
             {
               "@type": "Offer",
+              "availability": "https://schema.org/InStock",
               "itemOffered": {
                 "@type": "Service",
                 "name": "Индивидуальная хореография",
-                "description": "Постановка хореографии к свадьбе, выпускному, юбилею, корпоративу и другим особым случаям"
-              },
-              "priceSpecification": {
-                "@type": "UnitPriceSpecification",
-                "price": "2000",
-                "priceCurrency": "RUB",
-                "unitText": "занятие"
+                "description": "Постановка хореографии к свадьбе, выпускному, юбилею, корпоративу и другим особым случаям. Стоимость уточняйте по телефону."
               }
             },
             {
               "@type": "Offer",
+              "availability": "https://schema.org/InStock",
               "itemOffered": {
                 "@type": "Service",
                 "name": "Подарочные сертификаты",
@@ -88,33 +110,79 @@
         "@type": "LocalBusiness",
         "@id": "https://www.yesds.ru/#kazachya",
         "name": "YES! Dance Studio — ул. Б. Казачья",
+        "url": "https://www.yesds.ru/",
+        "image": "https://www.yesds.ru/images/%d0%be%d0%b1%d0%bb%d0%be%d0%b6%d0%ba%d0%b01%20copy-u125254-fr.jpg",
         "parentOrganization": { "@id": "https://www.yesds.ru/#organization" },
         "telephone": "+7-8452-530-480",
+        "email": "mail@yesds.ru",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "ул. Б. Казачья, 30",
           "addressLocality": "Саратов",
+          "addressRegion": "Саратовская область",
+          "postalCode": "410012",
           "addressCountry": "RU"
-        }
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 51.533934,
+          "longitude": 46.025859
+        },
+        "hasMap": "https://yandex.ru/maps/org/yes_/69000136388/",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "17:00",
+            "closes": "21:00"
+          }
+        ]
       },
       {
         "@type": "LocalBusiness",
         "@id": "https://www.yesds.ru/#rabochaya",
         "name": "YES! Dance Studio — ул. Рабочая",
+        "url": "https://www.yesds.ru/",
+        "image": "https://www.yesds.ru/images/%d0%be%d0%b1%d0%bb%d0%be%d0%b6%d0%ba%d0%b01%20copy-u125254-fr.jpg",
         "parentOrganization": { "@id": "https://www.yesds.ru/#organization" },
         "telephone": "+7-8452-530-480",
+        "email": "mail@yesds.ru",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "ул. Рабочая, 105А",
           "addressLocality": "Саратов",
+          "addressRegion": "Саратовская область",
+          "postalCode": "410056",
           "addressCountry": "RU"
-        }
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 51.528612,
+          "longitude": 46.007759
+        },
+        "hasMap": "https://yandex.ru/maps/org/yes_/82498468855/",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "17:00",
+            "closes": "21:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "12:00",
+            "closes": "19:00"
+          }
+        ]
       },
       {
         "@type": "Event",
         "@id": "https://www.yesds.ru/#concert-2026",
         "name": "Отчётный концерт YES!",
         "description": "Выступления учеников всех возрастов и направлений танцевальной студии YES!",
+        "startDate": "2026-06-14T16:00:00+04:00",
+        "endDate": "2026-06-14T19:00:00+04:00",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
         "location": {
@@ -146,7 +214,7 @@
             "name": "Где находятся филиалы в Саратове?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Студия YES! работает в двух точках: ул. Б. Казачья, 30 (угол ул. Вольской, 2 этаж) и ул. Рабочая, 105А (район Детского парка). В каждом филиале своё расписание — выберите удобный при записи."
+              "text": "Студия YES! работает в двух точках: ул. Б. Казачья, 30 (угол ул. Вольской, 2 этаж) — ежедневно 17:00–21:00; ул. Рабочая, 105А (район Детского парка) — пн–пт 17:00–21:00, сб и вс 12:00–19:00. В каждом филиале своё расписание занятий — выберите удобный при записи. Адреса на Яндекс.Картах: Казачья и Рабочая."
             }
           },
           {
@@ -159,10 +227,18 @@
           },
           {
             "@type": "Question",
+            "name": "Можно ли заказать свадебный танец или номер к празднику?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Да. В YES! ставят свадебный танец для молодожёнов, хореографию к балу, юбилею, выпускному и корпоративу. Запись по телефону +7 (8452) 530-480 или через форму на сайте."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "Какие направления танцев есть в студии?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "В студии YES! в Саратове более 20 направлений для детей и взрослых. Для детей: ритмика (3–5 лет), эстрадные танцы (5–13 лет), брейк-данс (6+). Уличные и молодёжные: хип-хоп, K-POP, шаффл. Современная хореография: контемпорари, джаз-фанк, Vogue, high heels, twerk, dancehall female, афро, strip. Латина: сольная латина (самба, ча-ча-ча, румба, пасадобль, джайв, сальса, бачата, реггетон), Bachata Lady, фламенко. Восточные танцы. Растяжка и фитнес: растяжка, растяжка в гамаках (аэростретчинг). Также — уроки свадебного танца и индивидуальная хореография."
+              "text": "В студии YES! в Саратове — более 20 направлений. Группы для детей и взрослых, с нуля и с опытом: Для детей — ритмика (3–5 лет), эстрадные танцы (5–13 лет), брейк-данс (6+). Уличные и молодёжные — хип-хоп, K-POP, шаффл, брейк-данс. Современная хореография — контемпорари, джаз-фанк, Vogue, high heels, twerk, dancehall female, афро, strip. Латина — сольная латина (самба, ча-ча-ча, румба, пасадобль, джайв, сальса, бачата, реггетон), Bachata Lady, фламенко. Восточные танцы — восточная хореография. Растяжка и фитнес — растяжка, растяжка в гамаках (аэростретчинг). Также доступны уроки свадебного танца и индивидуальная хореография к торжеству."
             }
           },
           {
@@ -183,18 +259,10 @@
           },
           {
             "@type": "Question",
-            "name": "Можно ли заказать свадебный танец или номер к празднику?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Да. В YES! ставят свадебный танец для молодожёнов, хореографию к балу, юбилею, выпускному и корпоративу. Индивидуальные занятия — от 2 000 ₽, запись по телефону +7 (8452) 530-480 или через форму на сайте."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "Как с вами связаться?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Позвоните: +7 (8452) 530-480 или +7 (903) 328-04-80. Напишите на mail@yesds.ru или в мессенджеры и соцсети: ВКонтакте, Telegram, WhatsApp, Instagram, YouTube. Также можно оставить заявку через форму записи на сайте."
+              "text": "Связаться с YES! Dance Studio в Саратове можно так: Телефоны: +7 (8452) 530-480, +7 (903) 328-04-80. Email: mail@yesds.ru. Соцсети и мессенджеры: ВКонтакте, YouTube, Telegram, WhatsApp, Instagram — ответим на вопросы и поможем с записью. Или оставьте заявку на сайте."
             }
           },
           {
@@ -202,7 +270,7 @@
             "name": "Что есть в филиалах студии?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "На ул. Б. Казачья, 30 (2 этаж): мужская и женская раздевалки, туалет, кулер с водой, зона ожидания. На ул. Рабочая, 105А: мужская и женская раздевалки, туалет, душ, кулер с водой, зона ожидания."
+              "text": "ул. Б. Казачья, 30 (2 этаж) — мужская и женская раздевалки, туалет, кулер с водой, зона ожидания. ул. Рабочая, 105А — мужская и женская раздевалки, туалет, душ, кулер с водой, зона ожидания."
             }
           }
         ]
@@ -235,6 +303,7 @@
           </div>
         </div>
         <a href="#">Цены</a>
+        <a href="#">Аренда</a>
         <a href="#">Контакты</a>
       </nav>
       <a href="tel:+78452530480" class="header__phone">+7 (8452) 530-480</a>
@@ -263,26 +332,36 @@
       <div class="container">
         <h2 class="locations__title" id="locations-title">Наши филиалы в Саратове</h2>
         <div class="locations__grid">
-          <article class="location-card">
+          <article class="location-card" id="kazachya">
             <div class="location-card__head">
               <span class="location-card__tag">Филиал 1</span>
-              <h3 class="location-card__name">ул. Б. Казачья, <span class="num">30</span></h3>
+              <h3 class="location-card__name">
+                <a href="https://yandex.ru/maps/org/yes_/69000136388/" target="_blank" rel="noopener noreferrer">
+                  ул. Б. Казачья, <span class="num">30</span>
+                </a>
+              </h3>
               <p class="location-card__hint">угол ул. Вольская, <span class="num">2</span> этаж</p>
+              <p class="location-card__hours">ежедневно, <span class="num">17:00</span>–<span class="num">21:00</span></p>
             </div>
             <div class="location-card__actions">
               <a href="#" class="btn btn--primary btn--sm">Расписание</a>
-              <a href="#" class="btn btn--outline btn--sm">Маршрут</a>
+              <a href="https://yandex.ru/maps/?rtext=~51.533934,46.025859&amp;rtt=auto" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Маршрут</a>
             </div>
           </article>
-          <article class="location-card">
+          <article class="location-card" id="rabochaya">
             <div class="location-card__head">
               <span class="location-card__tag">Филиал 2</span>
-              <h3 class="location-card__name">ул. Рабочая, <span class="num">105А</span></h3>
-              <p class="location-card__hint">район Детского парка</p>
+              <h3 class="location-card__name">
+                <a href="https://yandex.ru/maps/org/yes_/82498468855/" target="_blank" rel="noopener noreferrer">
+                  ул. Рабочая, <span class="num">105А</span>
+                </a>
+              </h3>
+              <p class="location-card__hint">район Детского парка, <span class="num">3</span> этаж</p>
+              <p class="location-card__hours">пн–пт <span class="num">17:00</span>–<span class="num">21:00</span>; сб, вс <span class="num">12:00</span>–<span class="num">19:00</span></p>
             </div>
             <div class="location-card__actions">
               <a href="#" class="btn btn--primary btn--sm">Расписание</a>
-              <a href="#" class="btn btn--outline btn--sm">Маршрут</a>
+              <a href="https://yandex.ru/maps/?rtext=~51.528612,46.007759&amp;rtt=auto" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Маршрут</a>
             </div>
           </article>
         </div>
@@ -333,12 +412,24 @@
     <section class="promo" aria-labelledby="promo-title">
       <div class="container">
         <div class="promo__card">
+          <time class="promo__datetime promo__datetime--mobile" datetime="2026-06-14">
+            <span class="promo__date-day num">14</span>
+            <span class="promo__date-month">июня</span>
+            <span class="promo__date-year num">2026</span>
+            <span class="promo__date-times"><span class="num">16:00</span> и <span class="num">19:00</span></span>
+          </time>
           <div class="promo__visual">
             <img
               src="https://www.yesds.ru/images/afisha_otchetnik1_kopia.jpg"
-              alt="Афиша отчётного концерта YES! Dance Studio"
+              alt="Афиша отчётного концерта YES! Dance Studio — 14 июня 2026"
               class="promo__img"
             >
+            <time class="promo__datetime promo__datetime--desktop" datetime="2026-06-14">
+              <span class="promo__date-day num">14</span>
+              <span class="promo__date-month">июня</span>
+              <span class="promo__date-year num">2026</span>
+              <span class="promo__date-times"><span class="num">16:00</span> и <span class="num">19:00</span></span>
+            </time>
             <div class="promo__overlay">
               <span class="promo__tag">Ближайшее событие · 2026</span>
               <h2 class="promo__title" id="promo-title">Отчётный концерт YES!</h2>
@@ -354,7 +445,7 @@
             </div>
           </div>
           <div class="promo__actions">
-            <a href="#" class="btn btn--primary btn--lg">Купить билеты</a>
+            <a href="#" class="btn btn--primary btn--lg">Подробнее</a>
             <a href="#signup" class="btn btn--outline-light btn--lg">Первое занятие бесплатно</a>
           </div>
         </div>
@@ -392,7 +483,7 @@
                 <p class="service-card__text">
                   Первый танец молодожёнов — и постановка хореографии к выпускному, юбилею, корпоративу и другим особым случаям
                 </p>
-                <p class="service-card__meta">от <span class="num">2 000</span> ₽ / занятие</p>
+                <p class="service-card__meta">Стоимость по запросу</p>
                 <span class="service-card__more">Заказать постановку →</span>
               </div>
             </div>
@@ -502,7 +593,7 @@
             <details class="faq__item">
               <summary class="faq__question"><h3 class="faq__question-text">Где находятся филиалы в Саратове?</h3></summary>
               <div class="faq__answer">
-                <p>Студия YES! работает в двух точках: ул. Б. Казачья, <span class="num">30</span> (угол ул. Вольской, <span class="num">2</span> этаж) и ул. Рабочая, <span class="num">105А</span> (район Детского парка). В каждом филиале своё расписание — выберите удобный при записи.</p>
+                <p>Студия YES! работает в двух точках: ул. Б. Казачья, <span class="num">30</span> (угол ул. Вольской, <span class="num">2</span> этаж) — ежедневно <span class="num">17:00</span>–<span class="num">21:00</span>; ул. Рабочая, <span class="num">105А</span> (район Детского парка) — пн–пт <span class="num">17:00</span>–<span class="num">21:00</span>, сб и вс <span class="num">12:00</span>–<span class="num">19:00</span>. В каждом филиале своё расписание занятий — выберите удобный при записи. <a href="https://yandex.ru/maps/org/yes_/69000136388/" target="_blank" rel="noopener noreferrer">Казачья на Яндекс.Картах</a>, <a href="https://yandex.ru/maps/org/yes_/82498468855/" target="_blank" rel="noopener noreferrer">Рабочая на Яндекс.Картах</a>.</p>
               </div>
             </details>
             <details class="faq__item">
@@ -514,7 +605,7 @@
             <details class="faq__item">
               <summary class="faq__question"><h3 class="faq__question-text">Можно ли заказать свадебный танец или номер к празднику?</h3></summary>
               <div class="faq__answer">
-                <p>Да. В YES! ставят свадебный танец для молодожёнов, хореографию к балу, юбилею, выпускному и корпоративу. Индивидуальные занятия — от <span class="num">2 000</span> ₽, запись по телефону <a href="tel:+78452530480">+7 (8452) 530-480</a> или через <a href="#signup">форму на сайте</a>.</p>
+                <p>Да. В YES! ставят свадебный танец для молодожёнов, хореографию к балу, юбилею, выпускному и корпоративу. Запись по телефону <a href="tel:+78452530480">+7 (8452) 530-480</a> или через <a href="#signup">форму на сайте</a>.</p>
               </div>
             </details>
           </div>
@@ -585,8 +676,8 @@
       </nav>
       <address class="footer__contacts">
         <p class="footer__city">г. Саратов</p>
-        <a href="#" class="footer__address">ул. Б. Казачья, <span class="num">30</span></a>
-        <a href="#" class="footer__address">ул. Рабочая, <span class="num">105А</span></a>
+        <a href="https://yandex.ru/maps/org/yes_/69000136388/" class="footer__address" target="_blank" rel="noopener noreferrer">ул. Б. Казачья, <span class="num">30</span></a>
+        <a href="https://yandex.ru/maps/org/yes_/82498468855/" class="footer__address" target="_blank" rel="noopener noreferrer">ул. Рабочая, <span class="num">105А</span></a>
       </address>
       <div class="footer__social">
         <a href="https://vk.com/yes_ds" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">
