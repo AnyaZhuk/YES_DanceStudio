@@ -1249,6 +1249,11 @@ address { font-style: normal; }
 
 .faq__answer p + p { margin-top: 12px; }
 
+.faq__answer strong {
+  color: var(--gray-900);
+  font-weight: 700;
+}
+
 .faq__answer a {
   color: var(--pink);
   font-weight: 600;
