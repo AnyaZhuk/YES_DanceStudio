@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Танцевальная студия YES! в Саратове — обучение танцам для всех возрастов. Первое занятие бесплатно!">
+  <meta name="description" content="Танцевальная студия YES! в Саратове: хип-хоп, contemporary, бальные и 20+ направлений. Филиалы на ул. Б. Казачья и ул. Рабочая. Первое занятие бесплатно!">
   <meta name="theme-color" content="#E20055">
   <link rel="canonical" href="https://www.yesds.ru/">
-  <title>Главная | Танцевальная студия YES! | г. Саратов</title>
+  <title>Танцевальная студия YES! в Саратове — занятия танцами от 3 лет</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
         "url": "https://www.yesds.ru/",
         "logo": "https://www.yesds.ru/images/artwork-12.svg",
         "image": "https://www.yesds.ru/images/%d0%be%d0%b1%d0%bb%d0%be%d0%b6%d0%ba%d0%b01%20copy-u125254-fr.jpg",
-        "description": "Танцевальная студия YES! в Саратове — обучение танцам для всех возрастов. Первое занятие бесплатно!",
+        "description": "Танцевальная студия YES! в Саратове: хип-хоп, contemporary, бальные и 20+ направлений. Филиалы на ул. Б. Казачья и ул. Рабочая. Первое занятие бесплатно!",
         "telephone": "+7-8452-530-480",
         "legalName": "ИП Алекперова Н.А.",
         "taxID": "641901665501",
@@ -123,6 +123,60 @@
         },
         "organizer": { "@id": "https://www.yesds.ru/#organization" },
         "image": "https://www.yesds.ru/images/afisha_otchetnik1_kopia.jpg"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.yesds.ru/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Для кого подойдут занятия в YES!?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "YES! Dance Studio в Саратове — для детей от 3 лет, подростков и взрослых. Занимаемся с нуля и с опытом: хип-хоп, contemporary, бальные и ещё 20+ направлений. Два филиала — на ул. Б. Казачья и ул. Рабочая."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Где находятся филиалы в Саратове?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Студия YES! работает в двух точках: ул. Б. Казачья, 30 (угол ул. Вольской, 2 этаж) и ул. Рабочая, 105А (район Детского парка). В каждом филиале своё расписание — выберите удобный при записи."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Как записаться на бесплатное пробное занятие?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Заполните форму на сайте или позвоните по телефону +7 (8452) 530-480. Укажите имя, телефон, направление и филиал — запись на ближайшую тренировку по расписанию. Первое посещение бесплатно."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Какие направления танцев есть в студии?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Более 20 стилей: хип-хоп, house, Vogue, contemporary, high heels, бальные танцы, бачата, латина, растяжка и другие. Для детей и взрослых — отдельные группы по возрасту и уровню."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Сколько стоят занятия?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Стоимость зависит от направления и абонемента. Актуальные цены — в разделе «Цены» на сайте или по телефону. Пробное занятие бесплатно, аренда зала — от 400 ₽/час."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Нужен ли опыт, чтобы начать танцевать?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Нет — большинство групп открыты для новичков. Преподаватели дают базу с нуля, без давления. Приходите на пробное занятие и почувствуйте атмосферу студии."
+            }
+          }
+        ]
       }
     ]
   }
@@ -166,8 +220,12 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero__visual">
-        <div class="hero__img" role="img" aria-label="Команда танцевальной студии YES!"></div>
-        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="hero__frame">
+          <div class="hero__img" role="img" aria-label="Команда танцевальной студии YES!"></div>
+          <div class="hero__overlay">
+            <h1 class="hero__title">Танцевальная студия YES! в Саратове</h1>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -364,6 +422,56 @@
           </fieldset>
           <button type="submit" class="btn btn--primary btn--lg btn--full">Записаться на занятие</button>
         </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 class="section-title" id="faq-title">Частые вопросы</h2>
+        <p class="faq__lead">Ответы о занятиях, филиалах и записи в Саратове</p>
+        <div class="faq__list">
+          <div class="faq__col">
+            <details class="faq__item" open>
+              <summary class="faq__question"><h3 class="faq__question-text">Для кого подойдут занятия в YES!?</h3></summary>
+              <div class="faq__answer">
+                <p>YES! Dance Studio в Саратове — для детей от <span class="num">3</span> лет, подростков и взрослых. Занимаемся с нуля и с опытом: хип-хоп, contemporary, бальные и ещё <span class="num">20+</span> направлений. Два филиала — на ул. Б. Казачья и ул. Рабочая.</p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question"><h3 class="faq__question-text">Где находятся филиалы в Саратове?</h3></summary>
+              <div class="faq__answer">
+                <p>Студия YES! работает в двух точках: ул. Б. Казачья, <span class="num">30</span> (угол ул. Вольской, <span class="num">2</span> этаж) и ул. Рабочая, <span class="num">105А</span> (район Детского парка). В каждом филиале своё расписание — выберите удобный при записи.</p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question"><h3 class="faq__question-text">Как записаться на бесплатное пробное занятие?</h3></summary>
+              <div class="faq__answer">
+                <p>Заполните <a href="#signup">форму на сайте</a> или позвоните по телефону <a href="tel:+78452530480">+7 (8452) 530-480</a>. Укажите имя, телефон, направление и филиал — запись на ближайшую тренировку по расписанию. Первое посещение бесплатно.</p>
+              </div>
+            </details>
+          </div>
+          <div class="faq__col">
+            <details class="faq__item">
+              <summary class="faq__question"><h3 class="faq__question-text">Какие направления танцев есть в студии?</h3></summary>
+              <div class="faq__answer">
+                <p>Более <span class="num">20</span> стилей: хип-хоп, house, Vogue, contemporary, high heels, бальные танцы, бачата, латина, растяжка и другие. Для детей и взрослых — отдельные группы по возрасту и уровню.</p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question"><h3 class="faq__question-text">Сколько стоят занятия?</h3></summary>
+              <div class="faq__answer">
+                <p>Стоимость зависит от направления и абонемента. Актуальные цены — в разделе «Цены» на сайте или по телефону. Пробное занятие бесплатно, аренда зала — от <span class="num">400</span> ₽/час.</p>
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__question"><h3 class="faq__question-text">Нужен ли опыт, чтобы начать танцевать?</h3></summary>
+              <div class="faq__answer">
+                <p>Нет — большинство групп открыты для новичков. Преподаватели дают базу с нуля, без давления. Приходите на <a href="#signup">пробное занятие</a> и почувствуйте атмосферу студии.</p>
+              </div>
+            </details>
+          </div>
+        </div>
       </div>
     </section>
   </main>
