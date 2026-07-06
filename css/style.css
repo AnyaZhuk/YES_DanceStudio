@@ -586,6 +586,31 @@ address { font-style: normal; }
   object-fit: cover;
 }
 
+@media (min-width: 1024px) {
+  .promo {
+    padding: 24px 0 64px;
+  }
+
+  .promo__card {
+    min-height: calc(100dvh - var(--header-h));
+  }
+
+  .promo__visual {
+    height: calc(100dvh - var(--header-h));
+    min-height: 520px;
+  }
+
+  .promo__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: unset;
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+
 .promo__overlay {
   position: absolute;
   inset: 0;
@@ -1589,6 +1614,17 @@ address { font-style: normal; }
     padding: 32px 20px 1.5rem;
   }
 
+  .promo__visual {
+    height: auto;
+    min-height: 0;
+  }
+
+  .promo__img {
+    position: static;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
   .promo__subtitle,
   .promo__perks {
     display: none;
@@ -1598,6 +1634,7 @@ address { font-style: normal; }
     display: flex;
     flex-direction: column;
     background: var(--gray-900);
+    min-height: 0;
   }
 
   .promo__actions {
